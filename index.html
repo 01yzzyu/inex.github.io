@@ -6,9 +6,9 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Script">
+  <meta name="title" content="InEx">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="Token Pruning method">
+  <meta name="description" content="Multiagent, Multi-modal, Visual reasoning, Hallucination">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
@@ -213,6 +213,14 @@
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
+        <a href="https://01yzzyu.github.io/xr.github.io/" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>XR: Cross-Modal Agents for Composed Image Retrieval</h5>
+            <p>We introduce X^R, a training-free multi-agent framework that reframes retrieval as a progressively coordinated reasoning process..</p>
+            <span class="work-venue">WWW 2026</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
         <a href="https://01yzzyu.github.io/mermaid.github.io/" class="work-item" target="_blank">
           <div class="work-info">
             <h5>MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition</h5>
@@ -232,34 +240,38 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Script: Graph-Structured and Query-Conditioned Semantic Token Pruning for Multimodal Large Language Models</h1>
+            <h1 class="title is-1 publication-title">InEx: Hallucination Mitigation via Introspection and Cross-Modal Multi-Agent Collaboration</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <div class="authors" style="text-align:center; font-size:1.2em; line-height:1.8em;">
                 
                 <span class="author-block">
-                  <a href="https://01yzzyu.github.io/" target="_blank">Zhongyu Yang</a><sup>*</sup>
+                  <a href="https://01yzzyu.github.io/" target="_blank">Zhongyu Yang</a><sup>1,2,*</sup>
                 </span>
-        
-                <span class="author-block">
-                  <a href="https://danielxu0208.github.io/" target="_blank">Dannong Xu</a><sup>*</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="https://bioml.eu.org/" target="_blank">Wei Pang</a>,
+                  <a href="https://yuanjames.github.io/" target="_blank">Yingfang Yuan</a><sup>2,*</sup>
                 </span>
                 <span class="author-block">
-                  <a href="https://yuanjames.github.io/" target="_blank">Yingfang Yuan</a><sup>†</sup>
+                  Xuanming Jiang</a><sup>1†</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=CQHNYh8AAAAJ&hl=zh-CN" target="_blank">Baoyi An
+                </span>
+                <span class="author-block">
+                  <a href="https://bioml.eu.org/" target="_blank">Wei Pang</a><sup>†</sup>,
                 </span>
               </div>
           
 
               <div class="has-text-centered is-size-5" style="margin-top:0.5em;">
-                <strong>TMLR 2025</strong>
+                <strong>AAAI 2026</strong>
               </div>
             
              <div class="is-size-5 publication-authors">
                   <span class="author-block">
-                      BCML, Heriot-Watt University<br> 
+                    <sup>1</sup>Xi’an Jiyun Technology Co., Ltd.,<br>
+                    <sup>2</sup>BCML, Heriot-Watt University,<br>
                   </span>
                  <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
                   <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding author</small></span>
@@ -269,7 +281,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://openreview.net/forum?id=F6xKzbgcHq" target="_blank"
+                        <a href="https://arxiv.org/pdf/2512.02981" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -280,7 +292,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/01yzzyu/script.github.io/tree/master/Script" target="_blank"
+                    <a href="https://github.com/01yzzyu/inex.github.io/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -291,7 +303,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2512.01949" target="_blank"
+                  <a href="https://arxiv.org/pdf/2512.02981" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -308,16 +320,6 @@
 </section>
 
     
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/comparsion_00.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-       Comparison of different token pruning methods. Attention-based and similarity-based methods prune tokens using attention scores and similarity scores, respectively. In contrast, divergence-based methods detect changes in model performance and retain tokens that cause minimal impact. Script (Graph-Structured and Query-Conditioned Token Pruning) combines graph-structured reduction of visual redundancy and query-conditioned semantic token selection to enable efficient pruning in MLLMs. In this example, Script successfully preserves key visual cues, such as the silver pot on the stove, the pineapple beside the limes, and the flowers on the table. Other methods fail to retain consistently.
-      </h2>
-    </div>
-  </div>
-</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -328,13 +330,13 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-           The rapid growth of visual tokens in multimodal large language models (MLLMs) leads to excessive memory consumption and inference latency, especially when handling high-resolution images and videos. 
-            Token pruning is a technique used to mitigate this issue by removing redundancy, but existing methods often ignore relevance to the user query or suffer from the limitations of attention mechanisms, 
-            reducing their adaptability and effectiveness. To address these challenges, we propose Script, a plug-and-play pruning method that requires no retraining and generalizes across diverse MLLMs. 
-            Script comprises two modules: a graph-structured pruning module that removes visually redundant tokens, and a query-conditioned semantic pruning module that preserves query-relevant visual information. 
-            Together, they enhance performance on multimodal tasks. Experiments on fourteen benchmarks across image and video understanding tasks show that Script consistently achieves higher model efficiency and predictive accuracy compared to existing pruning methods.
-            On LLaVA-NeXT-7B, it achieves up to prefill speedup and FLOP reduction, while retaining 96.88\% of the original performance. 
-        </p>
+          Hallucination remains a critical challenge in large language models (LLMs), hindering the development of reliable multimodal LLMs (MLLMs). However, existing solutions often rely on human intervention or underutilize the agent's ability to autonomously mitigate hallucination.
+To address these limitations, we draw inspiration from the way humans make reliable decisions in the real world.
+In particular, they begin with introspective reasoning to reduce uncertainty and form an initial judgment, then rely on external verification from diverse perspectives to reach a final decision.
+Motivated by this cognitive paradigm, we propose \textbf{InEx}, a training-free, multi-agent framework designed to autonomously mitigate hallucination. 
+InEx introduces internal introspective reasoning, guided by entropy-based uncertainty estimation, to improve the reliability of the decision agent's reasoning process. 
+The agent first generates a response, which is then iteratively verified and refined through external cross-modal multi-agent collaboration with the editing agent and self-reflection agents, further enhancing reliability and mitigating hallucination.
+Extensive experiments show that InEx consistently outperforms existing methods, achieving 4\%-27\% gains on general and hallucination benchmarks, and demonstrating strong robustness.         </p>
         </div>
       </div>
     </div>
@@ -348,11 +350,11 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
-        <img stype="margin:20px" src="static/images/queen_framework_00.png" alt="MY ALT TEXT"/>
+        <img stype="margin:20px" src="static/images/fig2_00.png" alt="MY ALT TEXT"/>
         <div style="margin: 2%;"></div>
-        <h2 class="subtitle has-text-justified"><span style="font-weight: bolder;">Our Script Framework.</span> a three-stage pruning framework: 
-          (a) overall architecture; (b) Query-Conditioned Semantic Pruning (QCSP); 
-          (c) Graph-Structured Pruning (GSP). Together, these modules remove semantically irrelevant and visually redundant tokens through a joint selection process.
+        <h2 class="subtitle has-text-justified"><span style="font-weight: bolder;">Overview of \textbf{InEx}. </span> 
+          In: A decision agent initiates introspective reasoning guided by unsupervised uncertainty estimation, producing an initial response grounded in internal uncertainty signals. 
+          Ex: The response is then iteratively refined through alternating cross-modal verification and introspective updates, where self-reflection agents assess consistency with visual and textual evidence, and the decision agent continues to revise its output accordingly.
         </h2>
       </div>
     </div>
@@ -366,17 +368,17 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/radar_00.png" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/case_study1_00.png" alt="Second research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-         (a) Efficiency Analysis on LLaVA-NeXT-7B under 88.9\% reduction. (b) Comparison with other baselines on LLaVA-1.5-7B under 94.4\% reduction.
+        Case study1.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/analysis_00.png" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/case_study3_00.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Token redundancy visualized via similarity and entropy on 10,000 COCO images.
+        Case study2.
         </h2>
       </div>
   </div>
